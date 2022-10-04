@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.bg-violet {
+  width: 33%;
+  height: 100vh;
+  background-image: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.content {
+  width: 100%;
+  max-width: 1240px;
+  height: 100%;
+  display: flex;
+}
+
+.cards-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-1 {
+  width: 447px;
+  height: 245px;
+  background-image: url("images/bg-card-front.png");
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.card-logo {
+  position: absolute;
+  top: 28px;
+  left: 32px;
+}
+
+.card-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  letter-spacing: 3.42222px;
+  color: #ffffff;
+  left: 32px;
+  bottom: 70px;
+  position: absolute;
+}
+
+.client-name {
+  left: 32px;
+  bottom: 26px;
+}
+
+.expiration-date {
+  right: 31px;
+  bottom: 26px;
+}
+
+.expiration-date,
+.client-name {
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+}
+
+.card-2 {
+  width: 447px;
+  height: 245px;
+  background-image: url("images/bg-card-back.png");
+  margin-left: auto;
+  position: relative;
+}
+
+.csv-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.125rem;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  position: absolute;
+  top: 111px;
+  right: 57px;
+}
+
+form {
+  width: 381px;
+  min-height: 352px;
+}
+
+form p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.75rem;
+  line-height: 0.9375rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #21092f;
+  margin-bottom: 9px;
+}
+
+#client-name,
+#card-number,
+#cvc-number,
+#month-number,
+#year-number {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #dfdee0;
+  border-radius: 8px;
+  padding: 11px 16px;
+  color: #21092f;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125rem;
+  line-height: 1.4375rem;
+  margin-bottom: 26px;
+}
+
+#client-name::placeholder,
+#card-number::placeholder,
+#cvc-number::placeholder,
+#month-number::placeholder,
+#year-number::placeholder {
+  color: #c4c4c4;
+}
+
+#client-name:focus,
+#card-number:focus,
+#cvc-number:focus,
+#month-number:focus,
+#year-number:focus {
+  outline: none;
+  border: double 1px transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(163.95deg, #6348fe 4.74%, #610595 88.83%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+#month-number,
+#year-number {
+  width: 47%;
+}
+
+.especification-container {
+  width: 100%;
+  height: 69px;
+  display: flex;
+}
+
+.expiration-date-container,
+.cvc-container {
+  width: 50%;
+  height: 100%;
+}
+
+.expiration-date-container {
+  padding-right: 20px;
+}
+
+.date-container {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  outline: none;
+  width: 100%;
+  background: #21092f;
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  color: #ffffff;
+  margin-top: 28px;
+}
+
+button:hover {
+  cursor: pointer;
+}
